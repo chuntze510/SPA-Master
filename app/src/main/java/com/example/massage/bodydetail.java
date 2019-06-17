@@ -24,7 +24,6 @@ public class bodydetail extends AppCompatActivity {
         setContentView(R.layout.activity_bodydetail);
         Sec = (TextView) findViewById(R.id.sec);
         Bodytype2 = (TextView) findViewById(R.id.bodytype2);
-        Bodydetail = (ImageView) findViewById(R.id.bodydetail);
         Counttime = (Button) findViewById(R.id.countime);
 
         Counttime.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +31,7 @@ public class bodydetail extends AppCompatActivity {
             public void onClick(View view) {
                 if (!timeon)
                 {
-                    Counttime.setText("finish");
+                    Counttime.setText("請持續按壓");
                     new CountDownTimer(10000,1000) {
                         @Override
                         public void onTick(long sec) {
@@ -41,6 +40,7 @@ public class bodydetail extends AppCompatActivity {
 
                         @Override
                         public void onFinish() {
+                            Counttime.setText("繼續下一穴位");
                             Toast.makeText(bodydetail.this, "請舒緩按摩處!", Toast.LENGTH_LONG)
                                     .show();
                         }
