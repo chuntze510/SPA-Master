@@ -21,9 +21,9 @@
     - 功能畫面(腸胃妙方): 利用countdowntimer進行倒數並可重複,完成提醒
     - 功能畫面(失眠剋星): 利用countdowntimer進行倒數並可重複,完成提醒
 ## 畫面展示
--主畫面(可在此點選需要之功能)
+主畫面(可在此點選需要之功能)
 ![screenshots/mainactivity.png](screenshots/mainactivity.png)
--功能畫面(針對治療位置進行按摩)
+功能畫面(針對治療位置進行按摩)
 ![screenshots/function.png](screenshots/function.png)
  ## Demo網址
  https://youtu.be/kqt7ADXdXk0
