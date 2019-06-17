@@ -13,4 +13,7 @@
     <string name="usehotwater">按壓完後請配合溫開水與熱敷</string>
     <string name="_20sec">按壓方法: 一個穴位順時鐘按壓20秒</string>
     <string name="todo">TODO</string>
+    <string name="username">會員帳號</string>
+    <string name="loginnnn">登入</string>
+    <string name="passsss">會員密碼</string>
 </resources>

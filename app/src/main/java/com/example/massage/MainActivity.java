@@ -8,12 +8,17 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
+    private static final int REQUEST_LOGIN = 50 ;
+    boolean logon = false;
     Button btn1,btn2,btn3,btn4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        if(!logon){
+            Intent intent = new Intent(this,loginActivity.class);
+            startActivityForResult(intent, REQUEST_LOGIN);
+        }
         btn1=(Button)findViewById(R.id.button);
         btn2=(Button)findViewById(R.id.button2);
         btn3=(Button)findViewById(R.id.button3);
@@ -53,4 +58,13 @@ public class MainActivity extends Activity {
 
 
     }
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    if( requestCode ==REQUEST_LOGIN){
+        if(resultCode != RESULT_OK){
+            finish();
+        }
+    }
 }
+}
+
