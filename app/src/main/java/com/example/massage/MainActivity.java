@@ -16,6 +16,8 @@ public class MainActivity extends Activity {
 
         btn1=(Button)findViewById(R.id.button);
         btn2=(Button)findViewById(R.id.button2);
+        btn3=(Button)findViewById(R.id.button3);
+        btn4=(Button)findViewById(R.id.button4);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +31,21 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,bodydetail.class);
+                startActivity(intent);
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,bodytwodetail.class);
+                startActivity(intent);
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,bodythreedetail.class);
                 startActivity(intent);
             }
         });

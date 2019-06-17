@@ -9,21 +9,20 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class bodydetail extends AppCompatActivity {
+public class bodytwodetail extends AppCompatActivity {
     int bodytype_img;
     String name;
     Button Counttime;
-    TextView Sec, Bodytype2;
-    ImageView Bodydetail;
+    TextView Sec, Bodytype;
     Boolean timeon = false;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bodydetail);
+        setContentView(R.layout.activity_bodytwodetail);
         Sec = (TextView) findViewById(R.id.sec);
-        Bodytype2 = (TextView) findViewById(R.id.bodytype2);
+        Bodytype = (TextView) findViewById(R.id.bodytype);
         Counttime = (Button) findViewById(R.id.countime);
 
         Counttime.setOnClickListener(new View.OnClickListener() {
@@ -41,15 +40,15 @@ public class bodydetail extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             Counttime.setText("請休息十秒點擊繼續");
-                            Toast.makeText(bodydetail.this, "請舒緩按摩處!", Toast.LENGTH_LONG)
+                            Toast.makeText(bodytwodetail.this, "請舒緩按摩處!", Toast.LENGTH_LONG)
                                     .show();
                         }
                     }.start();
                 }
                 else
-                    {
-                        Toast.makeText(bodydetail.this, "finish!", Toast.LENGTH_SHORT).show();
-                        finish();
+                {
+                    Toast.makeText(bodytwodetail.this, "finish!", Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }
         });

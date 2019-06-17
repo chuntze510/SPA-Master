@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".bodythreedetail"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".bodytwodetail" />
         <activity android:name=".bodydetail" />
         <activity android:name=".bodylist" />
         <activity android:name=".begining">

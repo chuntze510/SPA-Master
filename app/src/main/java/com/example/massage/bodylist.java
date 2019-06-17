@@ -32,13 +32,13 @@ public class bodylist extends AppCompatActivity {
     private void initial() {
     bodyList.add(new body(R.drawable.c03_1,"腸胃問題"));
     bodyList.add(new body(R.drawable.c03_2,"失眠問題"));
-    bodyList.add(new body(R.drawable.c03_3,"失眠問題"));
-    bodyList.add(new body(R.drawable.c03_5,"失眠問題"));
-    bodyList.add(new body(R.drawable.c03_7,"失眠問題"));
-    bodyList.add(new body(R.drawable.c03_8,"失眠問題"));
+    bodyList.add(new body(R.drawable.c03_3,"肝臟問題"));
+    bodyList.add(new body(R.drawable.c03_5,"胰臟問題"));
+    bodyList.add(new body(R.drawable.c03_7,"頭痛問題"));
+    bodyList.add(new body(R.drawable.c03_8,"眼睛問題"));
     bodyList.add(new body(R.drawable.c03_9,"失眠問題"));
-    bodyList.add(new body(R.drawable.c03_10,"失眠問題"));
-    bodyList.add(new body(R.drawable.c03_14,"失眠問題"));
+    bodyList.add(new body(R.drawable.c03_10,"精神問題"));
+    bodyList.add(new body(R.drawable.c03_14,"耳朵問題"));
 
     }
 }

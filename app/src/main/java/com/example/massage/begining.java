@@ -19,6 +19,7 @@ public class begining extends AppCompatActivity {
             public void run(){
                 Intent intent = new Intent(begining.this, MainActivity.class);
                 startActivity(intent);
+                //跳出回到main阿咖踢
                 finish();
             }}
             ,

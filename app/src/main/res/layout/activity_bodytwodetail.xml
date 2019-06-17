@@ -15,8 +15,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/head"
         android:gravity="center"
+        android:text="@string/stoch"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/starttoplay"
+        android:text="@string/startnow"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="@string/_50"
+        android:text="@string/_301"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/countime"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,16 +62,16 @@
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
-        android:text="@string/_20"
+        android:text="@string/_20sec"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -79,11 +79,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
-        android:text="@string/stoprightnow"
+        android:text="@string/nowstop"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +100,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
-        android:text="@string/hotwater"
+        android:text="@string/usehotwater"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,26 +108,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="422dp"
-        android:layout_height="131dp"
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="287dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bodytype2"
-        app:srcCompat="@drawable/body_01"
-        android:contentDescription="TODO" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="384dp"
-        android:layout_height="139dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/body_1"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/body_2"
+        android:contentDescription="@string/todo" />
 
 </android.support.constraint.ConstraintLayout>
